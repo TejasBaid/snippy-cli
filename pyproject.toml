@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-snippy"
+version = "1.0.0"
+description = "This is a snippet management package"
+authors = [{name = "Tejas Baid"}]
+
+dependencies = [
+    "python-editor",
+    "pyperclip"
+]
+
+[project.scripts]
+snip = "snippy.__main__:main"

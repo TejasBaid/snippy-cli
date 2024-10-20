@@ -1,0 +1,44 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Setuptools build directories
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# macOS system files
+.DS_Store
+
+# Editor files (e.g., VSCode, Sublime)
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+
+# Test results
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Python virtual environment manager files (optional)
+*.pylint.d
+*.mypy_cache/

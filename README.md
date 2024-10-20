@@ -1,7 +1,7 @@
-Here’s the **`README.md`** file as a text block for your "Snippy" project:
+Here’s the updated **`README.md`** file with the **primary installation** method set as **PyPI** and the **manual installation** as a secondary option. I’ve updated the links accordingly:
 
 
-# 📝 Snippy - A Simple CLI for Managing Code Snippets
+# 📝 Snippy - A Simple CLI for Managing Code Snippets (v1.0.0)
 
 Snippy is a lightweight command-line interface (CLI) tool for managing code snippets efficiently. With Snippy, you can create, edit, copy, and delete snippets right from your terminal. It's designed to help developers quickly store and retrieve useful code snippets, all while keeping things simple and straightforward.
 
@@ -13,7 +13,19 @@ Snippy is a lightweight command-line interface (CLI) tool for managing code snip
 
 ## 📦 Installation
 
-To install Snippy, follow these steps:
+### From PyPI (Recommended)
+
+The easiest way to install Snippy is from [PyPI](https://pypi.org/project/snippy-cli/). Just run the following command:
+
+```bash
+pip install snippy-cli
+```
+
+This will install **snippy-cli** and its dependencies, making it available as a command-line tool that you can run directly.
+
+### Manual Installation
+
+If you prefer to install manually, you can clone the repository and install the package locally.
 
 1. **Clone the repository**:
    ```bash
@@ -76,9 +88,25 @@ Once installed, Snippy can be used directly from the terminal using the `snip` c
 | `snip delete <snippet_name>`   | Delete a snippet                                    |
 | `snip help`                    | Display this help message                           |
 
+## 📜 Versioning
+
+This is **snippy-cli v1.0.0**, which includes the following features:
+
+- **Snippet management**: Create, list, open, edit, copy, and delete snippets from the command line.
+- **Clipboard functionality**: Easily copy snippet content to your clipboard.
+- **Interactive mode** (planned for future versions).
+
+Stay tuned for more updates in future versions!
+
 ## 🤝 Contributing
 
-Feel free to submit pull requests, open issues, or suggest new features! Contributions are welcome.
+Feel free to submit pull requests, open issues, or suggest new features! Contributions are welcome. To contribute:
+
+1. Fork the repository.
+2. Create a new feature branch (`git checkout -b feature-branch`).
+3. Make your changes and commit (`git commit -m "Add some feature"`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
 
 ## 📜 License
 
@@ -89,4 +117,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Thanks to the open-source community for the inspiration and support.
 ```
 
-You can directly copy and paste this into your `README.md` file for your GitHub repository. Let me know if you need any further changes!
+### Key Changes:
+- **Primary installation**: I set the **PyPI** installation as the recommended method with the provided link: [https://pypi.org/project/snippy-cli/](https://pypi.org/project/snippy-cli/).
+- **Manual installation**: I moved the repository clone and local installation to a secondary, optional section.
+
+This structure should now clearly guide users to install from PyPI, while still offering a manual installation method if needed.
+
+Let me know if any other adjustments are needed!

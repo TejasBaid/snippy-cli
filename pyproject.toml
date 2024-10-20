@@ -3,15 +3,16 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "py-snippy"
+name = "snippy-cli"
 version = "1.0.0"
-description = "This is a snippet management package"
-authors = [{name = "Tejas Baid"}]
+description = "A CLI tool for managing code snippets"
+readme = "README.md"
+authors = [{name = "Tejas Baid", email = "tejasbaid3@gmail.com"}]
+requires-python = ">=3.6"
+dependencies = ["pyperclip", "python-editor"]
 
-dependencies = [
-    "python-editor",
-    "pyperclip"
-]
+[project.urls]
+homepage = "https://github.com/TejasBaid/snippy-cli"
 
 [project.scripts]
 snip = "snippy.__main__:main"

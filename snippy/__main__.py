@@ -1,5 +1,6 @@
-import sys
 from .app import Snipper
+import sys
+from .interactive_mode import interactive_mode
 
 def main():
     snipper = Snipper()
@@ -26,7 +27,8 @@ def main():
         "remove": snipper.delete,
         "rm": snipper.delete,
         "help": snipper.help,
-        "--help": snipper.help
+        "--help": snipper.help,
+        "interactive": interactive_mode  # Add interactive mode support
     }
 
     # If the command exists in the map, call the corresponding function

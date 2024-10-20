@@ -7,6 +7,8 @@ import subprocess  # To handle fallback case where editor.edit() fails
 from os.path import isfile, join
 from os import listdir
 
+
+
 rootDir = os.path.dirname(__file__)
 snippetDir = os.path.join(rootDir, "Snippets")
 
@@ -20,16 +22,27 @@ class Snipper:
             print("📁 Created Snippets directory.\n")
 
     def list(self):
-        """Lists all snippets in the Snippets directory."""
-        onlyfiles = [f for f in listdir(snippetDir)]
-        if onlyfiles:
-            print("💡 Snippets in the directory:")
-            print("=" * 30)
-            for i in onlyfiles:
-                print(f"📝 {i}")
-            print("=" * 30)
-        else:
-            print("⚠️  No snippets found in the directory.\n")
+    """Lists all snippets in the Snippets directory in a tabular format."""
+    self.create_dir()  # Ensure the Snippets directory exists
+
+    onlyfiles = [f for f in listdir(snippetDir)]  # Get the list of snippets
+    if onlyfiles:
+        print("💡 Snippets in the directory:")
+        print("=" * 40)
+
+        # Calculate the longest snippet name for formatting
+        max_length = max(len(f) for f in onlyfiles)
+        header = f"{'#':<5} {'Snippet Name':<{max_length}}"
+        print(header)
+        print("-" * (5 + max_length + 2))
+
+        # Display each snippet with its index in a formatted manner
+        for index, filename in enumerate(onlyfiles):
+            print(f"{index + 1:<5} {filename:<{max_length}}")
+
+        print("=" * 40)
+    else:
+        print("⚠️  No snippets found in the directory.\n")
 
     def make_snip(self, name):
         """Creates a new snippet by opening an editor."""

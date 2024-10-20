@@ -1,6 +1,6 @@
 Here’s the **`README.md`** file as a text block for your "Snippy" project:
 
-```
+
 # 📝 Snippy - A Simple CLI for Managing Code Snippets
 
 Snippy is a lightweight command-line interface (CLI) tool for managing code snippets efficiently. With Snippy, you can create, edit, copy, and delete snippets right from your terminal. It's designed to help developers quickly store and retrieve useful code snippets, all while keeping things simple and straightforward.
